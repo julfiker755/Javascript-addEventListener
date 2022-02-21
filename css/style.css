@@ -2,3 +2,36 @@
     padding:0px;
     margin:0px;
 }
+.box1{
+    width: 100px;
+    height:100px;
+    background-color: red;
+}
+.box2{
+    width: 100px;
+    height:100px;
+    background-color:green;
+}
+.box3{
+    width: 100px;
+    height:100px;
+    background-color:orange;
+}
+.box4{
+    width: 100px;
+    height:100px;
+    background-color:purple;
+    order:1;
+}
+.box-area{
+    border:10px solid tomato;
+   
+}
+.box-main {
+    /* width: 500px; */
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 43px 77px; */
+}

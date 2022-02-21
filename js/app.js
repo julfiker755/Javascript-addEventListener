@@ -1,17 +1,18 @@
-
-const demo1=document.querySelector("#button11");
- demo1.addEventListener("click",()=>{
-    document.querySelector("#demo1").innerHTML="Bangladesh";
-    
- })
- const demo2=document.querySelector("#button12");
- demo2.addEventListener("click",function(){
-     document.querySelector("#demo").textContent="I am fine";
- })
- var update=document.querySelector("#update");
- update.addEventListener("click",function(){
-     var text1=document.querySelector("#input-text");
-     var update=document.querySelector(".update-text");
-     update.innerHTML=text1.value;
-     text1.value='';
- })
+// var items=document.querySelectorAll(".item")
+// for (const item of items){
+//     item.addEventListener("click",function(event){
+//    // document.getElementById("delegate").removeChild(item)
+//     // event.target.parentNode.removeChild(event.target)
+//     })
+// }
+var btn=document.querySelector("#btn11");
+btn.addEventListener("click",function(){
+    var cre=document.createElement('li');
+    cre.innerHTML="I live in khansama";
+    cre.classList.add('item')
+    var childvai=document.getElementById("delegate");
+     childvai.appendChild(cre)
+});
+document.querySelector("#delegate").addEventListener("click",function(event){
+    event.target.parentNode.removeChild(event.target)
+})
