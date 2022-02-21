@@ -1,11 +1,18 @@
-var btn=document.getElementById("button12");
-btn.addEventListener("click",function(){
- document.querySelector(".delete").style.display='none';
+document.querySelector("#bubb").addEventListener("click",function(event){
+    console.log("Hello bubble parent")
+    event.stopPropagation();
 })
-var btnf=document.querySelector(".input-text");
-btnf.addEventListener("focus",function(){
- document.body.style.backgroundColor='red';
+document.querySelector(".item").addEventListener("click",function(event){
+    console.log("Hello bubble child section")
+    event.stopPropagation();
 })
-btnf.addEventListener("blur",function(){
-    document.body.style.backgroundColor="white";
+document.querySelector("#our").addEventListener("click",function(event){
+    console.log("Ami second child vai-1")
+    event.stopImmediatePropagation();
+})
+document.querySelector("#our").addEventListener("click",function(){
+    console.log("Ami second child vai-2")
+})
+document.querySelector("#our").addEventListener("click",function(){
+    console.log("Ami second child vai-3")
 })
