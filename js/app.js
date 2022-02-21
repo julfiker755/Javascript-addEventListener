@@ -1,17 +1,11 @@
-
-const demo1=document.querySelector("#button11");
- demo1.addEventListener("click",()=>{
-    document.querySelector("#demo1").innerHTML="Bangladesh";
-    
- })
- const demo2=document.querySelector("#button12");
- demo2.addEventListener("click",function(){
-     document.querySelector("#demo").textContent="I am fine";
- })
- var update=document.querySelector("#update");
- update.addEventListener("click",function(){
-     var text1=document.querySelector("#input-text");
-     var update=document.querySelector(".update-text");
-     update.innerHTML=text1.value;
-     text1.value='';
- })
+var btn=document.getElementById("button12");
+btn.addEventListener("click",function(){
+ document.querySelector(".delete").style.display='none';
+})
+var btnf=document.querySelector(".input-text");
+btnf.addEventListener("focus",function(){
+ document.body.style.backgroundColor='red';
+})
+btnf.addEventListener("blur",function(){
+    document.body.style.backgroundColor="white";
+})
