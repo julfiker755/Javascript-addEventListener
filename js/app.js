@@ -1,8 +1,15 @@
-const btn=document.querySelector("#button11");
-btn.addEventListener("click",function(){
-const textva=document.querySelector("#comand");
-const newpara=document.createElement("p");
-newpara.innerHTML=textva.value;
-var chi=document.querySelector(".command-area");
-chi.appendChild(newpara)
+// var btn=document.querySelector(".input-text");
+// btn.addEventListener("keyup",function(){
+//     var btn=document.querySelector(".input-text");
+//     console.log(btn.value)
+// })
+// var btn=document.querySelector(".input-text");
+// btn.addEventListener("keydown",function(){
+//     var btn=document.querySelector(".input-text");
+//     console.log(btn.value)
+// })
+var btn=document.querySelector(".input-text");
+btn.addEventListener("keypress",function(){
+    var btn=document.querySelector(".input-text");
+    console.log(btn.value)
 })
